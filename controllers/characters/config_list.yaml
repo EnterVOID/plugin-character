@@ -1,0 +1,20 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+title: void.character::lang.characters.list_title
+list: ~/plugins/void/character/models/character/columns.yaml
+modelClass: Void\Character\Models\Character
+recordUrl: void/character/characters/update/:id
+noRecordsMessage: backend::lang.list.no_records
+recordsPerPage: 20
+showCheckboxes: true
+showSetup: true
+
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: backend::lang.list.search_prompt
+
+
+

@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: void.character::lang.character.label
+form: ~/plugins/void/character/models/character/fields.yaml
+modelClass: Void\Character\Models\Character
+defaultRedirect: void/character/characters
+
+create:
+    redirect: void/character/characters/update/:id
+    redirectClose: void/character/characters
+
+update:
+    redirect: void/character/characters
+    redirectClose: void/character/characters

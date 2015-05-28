@@ -1,0 +1,53 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+tabs:
+    fields:
+
+        # Require Activation
+        require_activation:
+            span: auto
+            label: void.character::lang.settings.require_activation
+            comment: void.character::lang.settings.require_activation_comment
+            type: switch
+            tab: void.character::lang.settings.activation_tab
+
+        # Activation Mode
+        activate_mode:
+            span: auto
+            commentAbove: void.character::lang.settings.activate_mode_comment
+            label: void.character::lang.settings.activate_mode
+            type: radio
+            tab: void.character::lang.settings.activation_tab
+
+        # Welcome Template
+        welcome_template:
+            span: auto
+            label: void.character::lang.settings.welcome_template
+            comment: void.character::lang.settings.welcome_template_comment
+            type: dropdown
+            default: void.character::mail.activate
+            tab: void.character::lang.settings.activation_tab
+
+        # Hint
+        template_hint:
+            type: hint
+            path: $/void/character/models/settings/_template_hint.htm
+            tab: void.character::lang.settings.activation_tab
+
+        # Throttle Sign In
+        use_throttle:
+            span: auto
+            label: void.character::lang.settings.use_throttle
+            comment: void.character::lang.settings.use_throttle_comment
+            type: switch
+            tab: void.character::lang.settings.signin_tab
+
+        # Login Attribute
+        login_attribute:
+            span: auto
+            label: void.character::lang.settings.login_attribute
+            comment: void.character::lang.settings.login_attribute_comment
+            type: dropdown
+            tab: void.character::lang.settings.signin_tab

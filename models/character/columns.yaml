@@ -1,0 +1,73 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+
+    id:
+        label: void.character::lang.character.id
+        invisible: true
+
+    charactername:
+        label: void.character::lang.character.charactername
+        searchable: true
+        invisible: true
+
+    name:
+        label: void.character::lang.character.name
+        searchable: true
+
+    surname:
+        label: void.character::lang.character.surname
+        searchable: true
+        invisible: true
+
+    gender:
+        label: void.character::lang.character.gender
+        searchable: true
+
+    height:
+        label: void.character::lang.character.height
+        searchable: true
+
+    created_at:
+        label: void.character::lang.character.created_at
+
+    phone:
+        label: void.character::lang.character.phone
+        searchable: true
+        invisible: true
+
+    company:
+        label: void.character::lang.character.company
+        searchable: true
+        invisible: true
+
+    city:
+        label: void.character::lang.character.city
+        searchable: true
+        invisible: true
+
+    zip:
+        label: void.character::lang.character.zip
+        searchable: true
+        invisible: true
+
+    street_addr:
+        label: void.character::lang.character.street_addr
+        searchable: true
+        invisible: true
+
+    bio:
+        label: void.character::lang.character.bio
+        searchable: true
+        invisible: true
+
+    status:
+        label: void.core::lang.character.status.label
+        searchable: true
+
+    type:
+        label: void.core::lang.character.type.label
+        searchable: true
+        invisible: true

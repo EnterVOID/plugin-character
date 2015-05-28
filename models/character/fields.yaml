@@ -1,0 +1,86 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+
+    name:
+        label: void.character::lang.character.name
+        description: void.character::lang.character.name_desc
+        span: auto
+        required: true
+
+tabs:
+    fields:
+
+        gender:
+            span: full
+            label: void.character::lang.character.gender
+            description: void.character::lang.character.gender_desc
+            tab: void.character::lang.character.details
+
+        height:
+            span: left
+            label: void.character::lang.character.height
+            description: void.character::lang.character.height_desc
+            tab: void.character::lang.character.details
+
+        bio:
+            span: full
+            label: void.character::lang.character.bio
+            description: void.character::lang.character.bio_desc
+            type: richeditor
+            tab: void.character::lang.character.details
+            required: true
+
+        design_sheet:
+            span: auto
+            label: void.character::lang.character.design_sheet
+            tab: void.character::lang.character.images
+            type: fileupload
+            mode: image
+            imageHeight: 390
+            imageWidth: 260
+            required: true
+
+        supplemental_art:
+            span: auto
+            label: void.character::lang.character.supplemental_art
+            tab: void.character::lang.character.images
+            type: fileupload
+            mode: image
+            imageHeight: 190
+            imageWidth: 120
+
+secondaryTabs:
+    fields:
+
+        avatar:
+            label: void.character::lang.character.avatar
+            type: fileupload
+            mode: image
+            imageHeight: 260
+            imageWidth: 260
+            required: true
+
+        type:
+            label: void.character::lang.character.type.label
+            type: dropdown
+            options:
+                R: void.character::lang.character.type.regular
+                SDT: void.character::lang.character.type.sdt
+                A: void.character::lang.character.type.arma
+                N: void.character::lang.character.type.npc
+            required: true
+
+        status:
+            label: void.character::lang.character.status.label
+            type: dropdown
+            options:
+                A: void.character::lang.character.status.active
+                R: void.character::lang.character.status.retired
+                K: void.character::lang.character.status.killed
+                I: void.character::lang.character.status.inactive
+                N: void.character::lang.character.status.not_accepted
+                X: void.character::lang.character.status.declined
+            required: true
